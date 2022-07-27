@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Sign Up
+        
+        form(method='POST'  action='/api/1.0/user/signup')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='username' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' name='password')
+          button.btn.btn-primary(type='submit') Sign up
+
+  //- Load the script of facebook,js          
+  script(src="../js/facebook.js")
+  //- Load the JS SDK asynchronously 
+  div(class="fb-login-button" scope="public_profile,email,user_photos" onlogin="checkLoginState();" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false")
+  div#status
+  //- Load the JS SDK asynchronously
+  script(async defer crossorigin="anonymous" src="https://connect.facebook.net/EN/sdk.js#xfbml=1&version=v13.0&appId=1235571270311032&autoLogAppEvents=1" nonce="IKNBOwra")

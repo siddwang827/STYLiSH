@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STYLiSH - Hao Yu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+  <div class="header">
+    <a class="logo" href="index.html">
+      <img src="/img/stylish/components/logo.png" height="48px">
+    </a>
+    <ul class="navbar">
+      <a class="tag tag-women" href="./?tag=women">女裝</a>
+      <a class="tag tag-men" href="./?tag=men">男裝</a>
+      <a class="tag tag-accessories" href="./?tag=accessories">配件</a>
+    </ul>
+    <div class="search-container"></div>
+    <input class="search" id="search-input" placeholder="search">
+    <a class="cart" href="#">
+      <img src="/img/stylish/components/cart.png" alt="cart">
+      <div class="count">0</div>
+    </a>
+    <a class="member" href="/profile.html">
+      <img src="/img/stylish/components/member.png" alt="member">
+    </a>
+  </div>
+  <main>
+    <div id="product">
+      <div class="product_info">
+        <div class="product_main_frame">
+          <img class="product_main">
+        </div>
+        <div class="product_detail">
+          <div class="product_title"></div>
+          <div class="product_id"></div>
+          <div class="product_price"></div>
+          <div class="product_variants">
+            <div class="product_variant">
+              <div class="variant_title">顏色</div>
+              <div class="product_colors">
+              </div>
+            </div>
+            <div class="product_variant">
+              <div class="variant_title">尺寸</div>
+              <div class="product_sizes">
+              </div>
+            </div>
+            <div class="product_variant">
+              <div class="variant_title">數量</div>
+              <div class="product_qty">
+                <button id="btn-reduce">-</button>
+                <div id="qty">1</div>
+                <button id="btn-add">+</button>
+              </div>
+            </div>
+          </div>
+          <button id="add_to_cart">立即付款</button>
+          <div class="product_note"></div>
+          <div class="product_texture"></div>
+          <div class="product_description"></div>
+          <div class="product_wash"></div>
+          <div class="product_place"></div>
+        </div>
+      </div>
+      <div class="seperator">
+        更多產品資訊 </div>
+      <div class="product_story"></div>
+    </div>
+  </main>
+  <div id="checkout" class="checkout checkout-disable">
+    <div class="field_row">
+      <label class="field_title">信用卡號碼 </label>
+      <div class="tpfield" id="card-number"></div>
+    </div>
+    <div class="field_row">
+      <label class="field_title">有效期限 </label>
+      <div class="tpfield" id="card-expiration-date"></div>
+    </div>
+    <div class="field_row">
+      <label class="field_title">安全碼 </label>
+      <div class="tpfield" id="card-ccv"></div>
+    </div>
+    <div class="priceInfo">
+      <div class="freight">
+        <div class="priceInfo_tile">運費</div>
+        <div class="priceInfo_value">NT.<span>60</span></div>
+      </div>
+      <div class="subtotal">
+        <div class="priceInfo_tile">總金額</div>
+        <div class="priceInfo_value">NTD.<span>0</span></div>
+      </div>
+      <div class="total">
+        <div class="priceInfo_tile">應付金額</div>
+        <div class="priceInfo_value">NT.<span>60</span></div>
+      </div>
+    </div>
+    <div class="checkout_btns">
+      <button class="btn_checkout" name="submit">Pay</button>
+      <button class="btn_cancel" name="submit">Cancel</button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li>關於 Stylish</li>
+        <li>服務條款</li>
+        <li>隱私政策</li>
+        <li>聯絡我們</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <img src="/img/stylish/components/line.png">
+      <img src="/img/stylish/components/twitter.png">
+      <img src="/img/stylish/components/facebook.png">
+    </div>
+    <div class="footer-rights">&copy; 2022. Allrights reserved.</div>
+  </footer>
+  <script src="./js/search.js"></script>
+  <script src="https://js.tappaysdk.com/tpdirect/v5.9.0"></script>
+  <script src="./js/product.js"></script>
+  <script src="./js/pay.js"></script>
+  <script>
+
+  </script>
+
+</body>

@@ -1,0 +1,104 @@
+/* ================================= 
+  Main Element Styles
+==================================== */
+#campaigns {
+    height: 500px;
+    position: relative;
+}
+
+.campaign {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    z-index: 0;
+}
+
+
+.campaign_story {
+    max-width: 1160px;
+    width: 100%;
+    margin: 166px auto 0;
+    padding-left: 27px;
+    font-size: 30px;
+    font-weight: 100;
+    color: #070707;
+    line-height: 57px;
+    white-space: pre;
+    z-index: 2;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dot--active {
+    background-color: #8b572a;
+}
+
+#products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 50px 40px; */
+    max-width: 1160px;
+    padding: 70px 24px 20px;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    margin-bottom: 40px;
+}
+
+.product>img {
+    width: 100%;
+}
+
+.product_colors {
+    display: flex;
+    margin-top: 20px;
+}
+
+.product_color {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 1px #bbbbbb;
+}
+
+.product_title {
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #3f3a3a;
+}
+
+.product_price {
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #3f3a3a;
+}

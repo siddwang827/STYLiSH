@@ -1,0 +1,25 @@
+extends layout 
+
+block content
+  .main-body
+    h2.sub-name Campaign Create
+    
+    form#form-campaign.form-campaign( enctype="multipart/form-data" action='/admin/create-campaign' method='POST')   
+      h3 Campaign
+      .flex-container 
+        .row 
+          label.col(for=productID form='form-campaign') Product ID 
+          select.col#productID(name="product_id" form='form-campaign')
+        .row
+          label.col(for=story form='form-campaign') Story
+          textarea.col.story#story(name="story" cols="30" rows="10" form='form-campaign')  
+        .row 
+          label.col(for="main-image" form='createform') Picture 
+          input.col#picture(type='file' name='picture' form='form-campaign' accept='.jpg')
+
+      .button-row 
+        button.button-item.upload#btn-upload(form="form-campaign") Upload	
+
+  script(src="../js/admin/form-campaign.js") 
+
+    

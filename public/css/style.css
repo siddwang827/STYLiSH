@@ -1,0 +1,342 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Noto Sans TC", "微軟正黑體", "新細明體", arial, sans-serif;
+  color: #3f3a3a;
+  line-height: 2.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h3 {
+  margin: 2px 0px 0px;
+  padding: 10px 15px;
+  background-color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+}
+
+select,
+input {
+  font-size: 16px;
+  font-family: "微軟正黑體"
+}
+
+button {
+  font-family: "微軟正黑體";
+  font-size: 14px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-name {
+  margin: 0;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.main-name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-name a {
+  color: #000000
+}
+
+.main-nav a {
+  font-size: 1.5em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #c70000;
+}
+
+.main-header,
+.main-nav {
+  display: flex;
+}
+
+.main-header {
+  width: 80%;
+  background-color: rosybrown;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-name {
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+.main-body {
+  width: 80%;
+  background-color: rgba(255, 255, 255, .6);
+  flex-direction: column;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header,
+.main-body {
+  margin: 0 auto;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+
+#form-campaign,
+#createform {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#cardview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  background-color: ivory;
+}
+
+
+.flex-container,
+.main-info,
+.sub-info,
+.appearence-info,
+.variant-info,
+.image-info,
+.img-info,
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  background-color: ivory;
+
+}
+
+.button-bolck {
+  background-color: white;
+}
+
+.row,
+.info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 10px 0;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.checkbox-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 10px 0;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.button-row {
+  border: 10px 0;
+  padding: 5px 10px;
+}
+
+.radio:nth-child(even) {
+  margin: 0 10px 0 0;
+}
+
+.radio:last-child {
+  margin: 0;
+}
+
+.col,
+.info-item {
+  width: 400px;
+  height: 40px;
+}
+
+.story {
+  width: 400px;
+  height: 200px;
+}
+
+.button-item {
+  width: 100px;
+  height: 30px;
+}
+
+.size-title {
+  margin-right: auto
+}
+
+.tpfield {
+  height: 40px;
+  width: 300px;
+  border: 1px solid gray;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.checkout-info {
+  font-size: 18px;
+  text-align: center;
+  margin: auto
+}
+
+
+/* ================================= 
+  TapPay iframe Styles
+==================================== */
+
+
+#tappay-iframe {
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  line-height: 1.21428571em;
+  padding: .578571em 1em;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, .15);
+  color: rgba(0, 0, 0, .87);
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  -webkit-transition: color .1s ease, border-color .1s ease;
+  transition: color .1s ease, border-color .1s ease;
+  width: 100%;
+}
+
+
+
+/* ================================= 
+  External Buttons Styles
+==================================== */
+
+.upload {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.upload:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.upload:hover:after {
+  opacity: .5;
+}
+
+.upload:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.upload:active:after {
+  opacity: 1;
+}
+
+
+.button-14 {
+  background-image: linear-gradient(#f7f8fa, #e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  height: 29px;
+  font-size: 13px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-14:active {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:active:hover {
+  border-bottom-color: #a2a6ac;
+}
+
+.button-14:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+.button-14:focus {
+  background-color: #3b3b44;
+  box-shadow: rgba(98, 102, 109, 0.205) 0 0 3px 2px;
+  outline: 0;
+}

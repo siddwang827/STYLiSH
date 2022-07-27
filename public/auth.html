@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STYLiSH - Hao Yu</title>
+  <link href="./css/layout.css" rel="stylesheet">
+  <link href="./css/auth.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="header">
+    <a class="logo" href="index.html">
+      <img src="/img/stylish/components/logo.png" height="48px">
+    </a>
+    <ul class="navbar">
+      <a class="tag tag-women" href="./?tag=women">女裝</a>
+      <a class="tag tag-men" href="./?tag=men">男裝</a>
+      <a class="tag tag-accessories" href="./?tag=accessories">配件</a>
+    </ul>
+    <div class="search-container"></div>
+    <input class="search" id="search-input" placeholder="search">
+    <a class="cart" href="#">
+      <img src="/img/stylish/components/cart.png" alt="">
+      <div class="count">0</div>
+    </a>
+    <a class="member" href="/profile.html">
+      <img src="/img/stylish/components/member.png" alt="">
+    </a>
+  </div>
+  <main>
+    <div class="sign-in profile-container">
+      <div class="auth-header">SIGN IN</div>
+      <div class="greeting">Welcome to STYLiSH</div>
+      <div class="title">Email</div>
+      <input class="account-input" id="signin-email-input" placeholder="example@gmail.com">
+      <div class="title">Password</div>
+      <input class="password-input" id="signin-password-input" type="password">
+      <div class="ask-sign-up">New member? <a id="anchor-sign-up">Sign Up</a></div>
+      <button class="btn-submit" id="btn-signin" type="button" >Sign In</button>
+    </div>
+    <div class="sign-up profile-container disable">
+      <div class="auth-header">SIGN UP</div>
+      <div class="greeting">Welcome to STYLiSH</div>
+      <div class="title">Name</div>
+      <input class="name-input" id="signup-name-input" name="name" >
+      <div class="title">Email</div>
+      <input class="email-input" id="signup-email-input" name="email" placeholder="example@gmail.com" >
+      <div class="title">Password</div>
+      <input class="password-input" id="signup-password-input" name="password" type="password" minlength="8" required placeholder="at least 8 characters">
+      <div class="ask-sign-up">Already have an account? <a id="anchor-sign-up">Sign In</a></div>
+      <button class="btn-submit" id="btn-signup" type="button" >Sign Up</button>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li>關於 Stylish</li>
+        <li>服務條款</li>
+        <li>隱私政策</li>
+        <li>聯絡我們</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <img src="/img/stylish/components/line.png">
+      <img src="/img/stylish/components/twitter.png">
+      <img src="/img/stylish/components/facebook.png">
+    </div>
+    <div class="footer-rights">&copy; 2022. Allrights reserved.</div>
+    <script src="./js/auth.js"></script>
+  </footer>
+</body>

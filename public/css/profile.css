@@ -1,0 +1,54 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 0 150px;
+}
+
+.profile-image {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.profile-name {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #393939
+}
+
+.profile-provider {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939
+}
+
+.profile-email {
+    text-align: center;
+    margin: 24px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939;
+    font-size: 24px;
+}
+
+
+.btn-submit {
+    text-align: center;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 50px;
+    height: 48px;
+    margin: 50px auto 0;
+    color: rgb(226, 226, 226);
+    background-color: black;
+    cursor: pointer
+}
+
+.btn-submit:active {
+    box-shadow: 1px 1px 1px 1px rgb(114, 114, 114);
+    transform: translateY(2px)
+}

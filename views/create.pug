@@ -1,0 +1,97 @@
+extends layout
+
+block content
+  .main-body
+    h2.sub-name Product Create
+    form#createform.create-form( enctype="multipart/form-data" )
+      h3 Main Info
+      .main-info
+        .info-row 		
+          label.info-item(for="category" form='createform') category 
+          select.info-item#category(name='category' form='createform') 
+            option(value="women") women
+            option(value="men") men
+            option(value="accessories") accessories
+        .info-row 
+          label.info-item(for="title" form='createform') title 
+          input.info-item#title(name='title' form='createform')
+        .info-row 
+          label.info-item(for="description" form='createform') description 
+          input.info-item#description(name='description' form='createform')
+        .info-row 
+          label.info-item(for="price" form='createform') price 
+          input.info-item#price(name='price' form='createform') 
+
+      h3 Sub Info
+      .sub-info 
+        .info-row 
+          label.info-item(for="texture" form='createform') texture 
+          input.info-item#texture(name='texture' form='createform')
+        .info-row 
+          label.info-item(for="wash" form='createform') wash 
+          input.info-item#wash(name='wash' form='createform')
+        .info-row 
+          label.info-item(for="place" form='createform') place 
+          input.info-item#place(name='place' form='createform')
+        .info-row 
+          label.info-item(for="note" form='createform') note 
+          input.info-item#note(name='note' form='createform')
+        .info-row 
+          label.info-item(for="story" form='createform') story
+          textarea.info-item.story#story(name='story', cols="30", rows="10" form='createform')
+      h3 Variant
+      .variant-container#variant-container
+        .variant-info 
+          .info-row
+            label.info-item(for="colorName" form='createform') color 
+            select.info-item.colorName(name='colorName' id='colorName' form='createform')
+          .info-row
+            .info-item
+              span.size-title size
+            .info-item.checkbox-row
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="XS" form='createform')
+                label XS			
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="S" form='createform')
+                label S			
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="M" form='createform')
+                label M				
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="L" form='createform')
+                label L				
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="XL" form='createform')
+                label XL				
+              .checkbox
+                input.checkbox-input(name="size[0][]" type="checkbox" value="F" form='createform')
+                label F
+          .info-row
+            label.info-item(for="variants-stock") stock 
+            input.info-item(name='variantStock' id='variantStock' form='createform')
+      .button-block
+        .button-row
+          button.button-item.button-14(type='button' id="morestock") Add Stock
+      h3 Image
+      .img-info#img-info
+        .info-row
+          label.info-item(for="main-image" form='createform') Main image 
+          input.info-item#main-image(type='file' name='mainImage' form='createform' onchange="viewImage(this)" accept='.jpg')
+          div#view
+        //- .info-row
+        //- 	label.info-item(for="oother-image" form='createform') Other image 
+        //- 	input.info-item.other-image(type='file' name='otherImage' form='createform' accept='.jpg')
+      .button-block
+        .button-row
+          button.button-item.button-14(type='button' id="moreimg" ) More Pic
+          
+          .button-row 
+            button.button-item.upload#btn-upload( form='createform') Upload	
+
+
+  script(src="../js/admin/create.js") 
+					
+
+
+

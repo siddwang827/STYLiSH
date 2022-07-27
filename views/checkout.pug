@@ -1,0 +1,42 @@
+extends layout 
+
+block external CSS 
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css")
+block script 
+	script(src="https://code.jquery.com/jquery-1.10.1.min.js")
+	script(src="https://js.tappaysdk.com/tpdirect/v5.9.0")
+	script.	
+		TPDirect.setupSDK(12348, 'app_pa1pQcKoY22IlnSXq5m5WP5jFKzoRG58VEXpT7wU62ud7mMbDOGzCYIlzzLF', 'sandbox')
+
+
+block content 
+
+	.ui.grid.centered.doubling.stackable
+		.six.wide.column
+			.ui.segment
+				h1.ui.header Log In
+				form.flex-container(method='POST'  action='/api/1.0/user/signin')
+					div.info-row
+						label.info-item.checkout-info(for='email') Email
+						Input#email.info-item(type='email', placeholder='name@email.com' name='email')
+					div.info-row
+						label.info-item.checkout-info(for='pw') Password
+						input#pw.info-item(type='password' name='password')
+				button.ui.button(type='submit') Log in
+				button.ui.button Reset
+				h1.ui.header Direct Pay - iframe
+				form.ui.form
+					.field
+						label 信用卡
+						#tappay-iframe
+					br
+					#submit.ui.button Get Prime
+					br
+					pre#message.ui.error.message(style='overflow-x: auto').                      
+					pre#result.ui.info.message(style='overflow-x: auto').                    
+					pre#curl.ui.info.message(style='overflow-x: auto').
+
+	script(src="../js/checkout.js")
+
+
+	
